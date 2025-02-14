@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Escola Futebol Elite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="/mnt/data/escudo_futebol_elite.png" alt="Logo Escolinha de Futebol Elite">
+    <div class="container">
+        <h2>Inscrição - Escolinha de Futebol</h2>
+        <form action="https://formsubmit.co/escolafutebolelite@gmail.com" method="POST">
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="number" name="idade" placeholder="Idade" required>
+            <select name="modalidade" required>
+                <option value="Treino Rumo ao Profissional">Treino Rumo ao Profissional</option>
+                <option value="Treino Específico para Goleiro">Treino Específico para Goleiro</option>
+                <option value="Treino de Condicionamento Físico e Resistência">Treino de Condicionamento Físico e Resistência</option>
+            </select>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </div>
+</body>
+</html>
